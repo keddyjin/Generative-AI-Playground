@@ -40,15 +40,20 @@ while success and count <= frame2stop:
 print("end!")
 ```
 ## 3.视频示例
-[original video](Resources/download.mp4)  
-<video id="video" controls="" preload="none" poster="">
-      <source id="mp4" src="./Resources/download.mp4" type="video/mp4">
-</video>  
-
+[original video](Resources/download.mp4)
 [clipped video](Resources/in_3s.mp4)  
-<video id="video" controls="" preload="none" poster="">
-      <source id="mp4" src="./Resources/in_3s.mp4" type="video/mp4">
-</video>
+
+<!-- 
+
+https://user-images.githubusercontent.com/5978120/234200726-8c39ae7b-6a04-4e87-b47a-66656d7755c1.mp4
+
+https://user-images.githubusercontent.com/5978120/234201051-48db1c1c-7058-4f64-9c75-b2bd9692226c.mp4 
+
+-->
+
+caption1 | caption2
+:-: | :-:
+<video src='https://user-images.githubusercontent.com/5978120/234200726-8c39ae7b-6a04-4e87-b47a-66656d7755c1.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/5978120/234201051-48db1c1c-7058-4f64-9c75-b2bd9692226c.mp4' width=180/>
 
 
 # 试验过程 - 原生img2img
@@ -96,25 +101,20 @@ CFG Scale：10
 Denoising strength：0.35  
 Seed：1680175611  
 [result 1](Resources/out_10_0.35_1680175611_3s_merge.mp4)  
-<video id="video" controls="" preload="none" poster="">
-      <source id="mp4" src="./Resources/out_10_0.35_1680175611_3s_merge.mp4" type="video/mp4">
-</video>  
 
 CFG Scale：10  
 Denoising strength：0.4  
 Seed：1680175611  
 [result 2](Resources/out_10_0.4_1680175611_3s_merge.mp4)  
-<video id="video" controls="" preload="none" poster="">
-      <source id="mp4" src="./Resources/out_10_0.4_1680175611_3s_merge.mp4" type="video/mp4">
-</video>  
 
 CFG Scale：10  
 Denoising strength：0.45  
 Seed：1680175611  
 [result 3](Resources/out_10_0.45_1680175611_3s_merge.mp4)  
-<video id="video" controls="" preload="none" poster="">
-      <source id="mp4" src="./Resources/out_10_0.45_1680175611_3s_merge.mp4" type="video/mp4">
-</video>
+
+result 1 | result 2 | result 3
+:-: | :-: |  :-: 
+<video src='https://user-images.githubusercontent.com/5978120/234203034-c2723725-5999-4933-bffd-36aacf44be29.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/5978120/234203066-6827c1ff-c582-4dd7-9c79-8da3e8d5ce3f.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/5978120/234203114-7196332b-4843-4cf5-9974-dfc482adc9a0.mp4' width=180/>
 
 
 # 试验过程 - img2img+ebsynth
