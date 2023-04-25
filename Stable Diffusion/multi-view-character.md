@@ -1,3 +1,23 @@
+- [1 试验过程 text2img + 骨骼图 + LoRA：charturnerbetaLora\_charturnbetalora](#1-试验过程-text2img--骨骼图--loracharturnerbetalora_charturnbetalora)
+  - [1.1 原理](#11-原理)
+  - [1.2 需要安装的插件](#12-需要安装的插件)
+  - [1.3 需要下载的模型权重、LoRA权重和Textual Inversion权重](#13-需要下载的模型权重lora权重和textual-inversion权重)
+  - [1.4 骨骼图片及ControlNet设置](#14-骨骼图片及controlnet设置)
+  - [1.5 Prompt及对应结果](#15-prompt及对应结果)
+  - [1.6 需要注意和调试的参数](#16-需要注意和调试的参数)
+- [2 试验过程 text2img + 骨骼图 + LoRA：charturnerbetaLora\_charturnbetalora + Textual Inversion: charturnerv2](#2-试验过程-text2img--骨骼图--loracharturnerbetalora_charturnbetalora--textual-inversion-charturnerv2)
+  - [2.1 原理](#21-原理)
+  - [2.2 需要安装的插件](#22-需要安装的插件)
+  - [2.3 需要下载的模型权重、LoRA权重和Textual Inversion权重](#23-需要下载的模型权重lora权重和textual-inversion权重)
+  - [2.4 设置及对应结果](#24-设置及对应结果)
+  - [2.5 需要注意和调试的参数](#25-需要注意和调试的参数)
+- [3 试验过程 img2img](#3-试验过程-img2img)
+  - [3.1 原理](#31-原理)
+  - [3.2 需要安装的插件](#32-需要安装的插件)
+  - [3.3 需要下载的模型权重、LoRA权重和Textual Inversion权重](#33-需要下载的模型权重lora权重和textual-inversion权重)
+  - [3.4 设置及对应结果](#34-设置及对应结果)
+  - [3.5 需要注意和调试的参数](#35-需要注意和调试的参数)
+
 # 1 试验过程 text2img + 骨骼图 + LoRA：charturnerbetaLora_charturnbetalora
 
 ## 1.1 原理
