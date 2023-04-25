@@ -1,26 +1,26 @@
-# 试验过程1 text2img + 骨骼图 + LoRA：charturnerbetaLora_charturnbetalora
+# 1 试验过程 text2img + 骨骼图 + LoRA：charturnerbetaLora_charturnbetalora
 
-## 原理
+## 1.1 原理
 利用SD的text2img功能加上谷歌图做OpenPose的ControlNet约束，charturner LoRA模型做多视角的一致性约束
 
-## 需要安装的插件
+## 1.2 需要安装的插件
 ![](Resources/extension_all.png)
 ControlNet的插件：sd-webui-controlnet  
 Lora的插件：Lora  
 提示词括号的支持：prompt-bracket-checker
 
-## 需要下载的模型权重、LoRA权重和Textual Inversion权重
+## 1.3 需要下载的模型权重、LoRA权重和Textual Inversion权重
 - Base Model: anythingV3_fp16  
 - LoRA Model: charturnerbetaLora_charturnbetalora
 - Textual Inversion: NULL  
 
-## 骨骼图片及ControlNet设置
+## 1.4 骨骼图片及ControlNet设置
 骨骼图片：  
 ![](Resources/no_closeup.png)  
 ControlNet设置：  
 ![](Resources/three_view_ControlNet_1.png)
 
-## Prompt及对应结果
+## 1.5 Prompt及对应结果
 Prompt：
 ```
 masterpiece, best quality, 1girl, simple background, (white background:1.5), multiple views,
@@ -48,7 +48,7 @@ Seed：3637246925
 Result：  
 ![](Resources/00001-3637246925.png)
 
-## 需要注意和调试的参数
+## 1.6 需要注意和调试的参数
 最主要的参数是：  
 - CFG Scale：影响提示词对整体图像效果的影响程度，值越小越creative，值越大越固定到prompt
 - Denoising strength：影响算法影响程度，0表示图片无变化，1表示图片无关，0~1之间，算法执行的实际步数会小于Sampling steps设定的值  
@@ -60,20 +60,20 @@ Result：
 - Seed：随机数种子
 
 
-# 试验过程2 text2img + 骨骼图 + LoRA：charturnerbetaLora_charturnbetalora + Textual Inversion: charturnerv2
+# 2 试验过程 text2img + 骨骼图 + LoRA：charturnerbetaLora_charturnbetalora + Textual Inversion: charturnerv2
 
-## 原理
+## 2.1 原理
 利用SD的text2img功能加上谷歌图做OpenPose的ControlNet约束，charturner LoRA模型和Textual Inversion做多视角的一致性约束
 
-## 需要安装的插件
+## 2.2 需要安装的插件
 同上
 
-## 需要下载的模型权重、LoRA权重和Textual Inversion权重
+## 2.3 需要下载的模型权重、LoRA权重和Textual Inversion权重
 - Base Model: anythingV3_fp16  
 - LoRA Model: charturnerbetaLora_charturnbetalora
 - Textual Inversion: charturnerv2  
 
-## 设置及对应结果
+## 2.4 设置及对应结果
 骨骼图片：  
 ![](Resources/three_view_head.png)  
 ControlNet设置：  
@@ -111,7 +111,7 @@ Seed：1596857508
 Result：  
 ![](Resources/00009-1596857508.png)
 
-## 需要注意和调试的参数
+## 2.5 需要注意和调试的参数
 最主要的参数是：  
 - CFG Scale：影响提示词对整体图像效果的影响程度，值越小越creative，值越大越固定到prompt
 - Denoising strength：影响算法影响程度，0表示图片无变化，1表示图片无关，0~1之间，算法执行的实际步数会小于Sampling steps设定的值  
@@ -123,20 +123,20 @@ Result：
 - Seed：随机数种子
 
 
-# 试验过程3 img2img
+# 3 试验过程 img2img
 
-## 原理
+## 3.1 原理
 利用SD的img2img功能加上原始图片多视角的一致性来做内容约束
 
-## 需要安装的插件
+## 3.2 需要安装的插件
 同上
 
-## 需要下载的模型权重、LoRA权重和Textual Inversion权重
+## 3.3 需要下载的模型权重、LoRA权重和Textual Inversion权重
 - Base Model: anythingV3_fp16  
 - LoRA Model: NULL
 - Textual Inversion: NULL  
 
-## 设置及对应结果
+## 3.4 设置及对应结果
 输入图片：  
 ![](Resources/multi_view_input.jpg)  
 无需ControlNet约束  
@@ -153,7 +153,7 @@ Seed：3681444200
 Result：  
 ![](Resources/00007-3681444200.png)
 
-## 需要注意和调试的参数
+## 3.5 需要注意和调试的参数
 最主要的参数是：  
 - CFG Scale：影响提示词对整体图像效果的影响程度，值越小越creative，值越大越固定到prompt
 - Denoising strength：影响算法影响程度，0表示图片无变化，1表示图片无关，0~1之间，算法执行的实际步数会小于Sampling steps设定的值  
