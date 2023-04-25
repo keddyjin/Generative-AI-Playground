@@ -6,18 +6,19 @@
 [AUTOMATIC1111 SD WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 
 ## 1. 安装过程注意事项
 	1. 创建一个python 3.10的环境  （venv会复制这个环境，然后xformers会依赖python 3.10）
-	2. 在 webui-user.sh 中添加 export COMMANDLINE_ARGS="--xformers --share --listen --enable-insecure-extension-access"
+	2. 在 webui-user.sh 中添加 export COMMANDLINE_ARGS="--xformers --share --listen --enable-insecure-extension-access --no-half-vae"
 		--xformers 依赖会加速图片生成
 		--share 会生成一个类似 https://4b3cc8ca-8d33-42ed.gradio.live 的公开链接，可以公网访问
 		--listen 会生成 http://0.0.0.0:7860 使得可以连接到这个机器的其他机器通过IP来访问
 		--enable-insecure-extension-access 会让extension的访问正常 见module.shared.py 文件
+		--no-half-vae 会解决VAE出现的NaNs问题
 	3. 关于安装路径的问题，可以在webui-user.sh中 设置 install_dir；另外，先clone下来stable-diffusion-webui 的repo，运行webui.sh会自动将整个安装放在webui.sh所在路径下
         如果用官网的安装指令 bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)， 会默认安装在/home/$(whoami)/stable-diffusion-webui/下 
     4. 安装完后直接运行 ./webui.sh 即可
 
 ## Errors & Bugs
-- modules.devices.NansException: A tensor with all NaNs was produced in VAE. This could be because there's not enough precision to represent the picture. Try adding --no-half-vae commandline argument to fix this. Use --disable-nan-check commandline argument to disable this check.  
-在 webui-user.sh 中添加 export COMMANDLINE_ARGS="--xformers --share --listen --enable-insecure-extension-access --no-half-vae"
+__modules.devices.NansException: A tensor with all NaNs was produced in VAE. This could be because there's not enough precision to represent the picture. Try adding --no-half-vae commandline argument to fix this. Use --disable-nan-check commandline argument to disable this check.__  
+解决办法：在 webui-user.sh 中添加 `export COMMANDLINE_ARGS="--xformers --share --listen --enable-insecure-extension-access --no-half-vae"`
 
 # 2. 利用 tex2img 来生成图片
 ```

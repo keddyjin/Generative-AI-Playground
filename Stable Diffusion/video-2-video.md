@@ -58,7 +58,7 @@ caption1 | caption2
 
 # 试验过程 - 原生img2img
 ## 原理
-利用SD的img2img功能处理抽取出的每一帧，然后合成视频；暂时没有进行视频闪烁的处理
+利用SD的img2img功能处理抽取出的每一帧，然后合成视频；暂时没有进行视频闪烁的处理  
 
 ## 需要安装的插件
 ![](Resources/extension_1.png)
@@ -66,13 +66,13 @@ ControlNet的插件：sd-webui-controlnet
 Lora的插件：Lora  
 提示词括号的支持：prompt-bracket-checker
 
-
 ## 需要下载的模型权重、LoRA权重和Textual Inversion权重
 - Base Model: chilloutmix_NiPrunedFp32Fix  
 - LoRA Model: taiwanDollLikeness_v10, cutedoll_v71, koreandolllikeness_V10  
 - Textual Inversion: NULL  
 
 ## Prompt
+提示词Ref：[【AI动画】sd-webui-Mov2mov 扩展再次升级,详细解释参数设置,小白也可以轻轻松松一键出AI视频](https://www.bilibili.com/video/BV1rY4y1C7Q5/?share_source=copy_web&vd_source=491a705c64e7d059e5bdd0d959fce53f)
 ```
 (8k, RAW photo, best quality, masterpiece:1.2), (realistic, photo-realistic:1.37), ((like D.va in overwatch)), 1girl, (aegyo sal:1), ((wholebody blue bodysuit with pink ornament:1.2)), ((cyberpunk headphones)), portrait, cute, slim, ((white loose trousers connected with the loose blue bodysuit:1.4)), white gloves, ulzzang-6500, <lora:taiwanDollLikeness_v10:0.2>, <lora:cutedoll_v71:0.1>, <lora:koreandolllikeness_V10:0.7>, (Kpop, idol), top view, video game, small bust, dva, corneo, (((D.va))))
 Negative prompt: EasyNegative, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, extra fingers, fewer fingers, strange fingers, broken fingers, bad hand, ((zettai ryouiki:1.2)), (bared leg:1.2), ng_deepnegative_v1_75t, nsfw, nude, naked, nipples, (large bust:1.5), (bared bust:1.5) underwear, loli, kid, child, teen
