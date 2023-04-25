@@ -161,7 +161,14 @@ Negative prompt: EasyNegative, paintings, sketches, (worst quality:2), (low qual
 Steps: 20, Sampler: Euler a, CFG scale: 20, Seed: 2497240378, Size: 512x960, Model hash: 812cd9f9d9, Model: anythingV3_fp16, Denoising strength: 0.28, Mask blur: 4, ControlNet-0 Enabled: True, ControlNet-0 Module: canny, ControlNet-0 Model: control_canny-fp16 [e3fe7712], ControlNet-0 Weight: 0.5, ControlNet-0 Guidance Start: 0, ControlNet-0 Guidance End: 1, ControlNet-1 Enabled: True, ControlNet-1 Module: normal_map, ControlNet-1 Model: control_normal-fp16 [63f96f7c], ControlNet-1 Weight: 0.5, ControlNet-1 Guidance Start: 0, ControlNet-1 Guidance End: 1
 ```
 
-## Result
+## Script Parameters
+[]()
+[]()
+
+## Results
+result 1 | result 2 | result 3
+:-: | :-: |  :-: 
+<video src='https://user-images.githubusercontent.com/5978120/234246223-e26720c5-3f0d-4c8f-aa97-af0f288518b1.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/5978120/234246271-87e9cbfa-71af-43d2-b179-be93836301d7.mp4' width=180/> | <video src='https://user-images.githubusercontent.com/5978120/234246325-00962c56-2013-4a80-83d8-e4d44d67ce05.mp4' width=180/>
 
 
 # Others
