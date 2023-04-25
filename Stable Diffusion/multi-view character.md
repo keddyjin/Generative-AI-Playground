@@ -15,9 +15,9 @@ Lora的插件：Lora
 - Textual Inversion: NULL  
 
 ## 骨骼图片及ControlNet设置
-骨骼图片：
-![](Resources/no_closeup.png)
-ControlNet设置：
+骨骼图片：  
+![](Resources/no_closeup.png)  
+ControlNet设置：  
 ![](Resources/three_view_ControlNet_1.png)
 
 ## Prompt及对应结果
@@ -32,7 +32,7 @@ Steps: 30, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 2541653594, Size: 704x3
 CFG Scale：7  
 Denoising strength：0.5  
 Seed：2541653594  
-Result：
+Result：  
 ![](Resources/00000-2541653594.png)
 Prompt：
 ```
@@ -45,7 +45,7 @@ Steps: 30, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 3637246925, Size: 704x3
 CFG Scale：7  
 Denoising strength：0.6  
 Seed：3637246925  
-Result：
+Result：  
 ![](Resources/00001-3637246925.png)
 
 ## 需要注意和调试的参数
@@ -74,41 +74,41 @@ Result：
 - Textual Inversion: charturnerv2  
 
 ## 设置及对应结果
-骨骼图片：
-![](Resources/three_view_head.png)
-ControlNet设置：
-![](Resources/three_view_ControlNet_2.png)
+骨骼图片：  
+![](Resources/three_view_head.png)  
+ControlNet设置：  
+![](Resources/three_view_ControlNet_2.png)  
 Prompt：
 ```
 ((photo realistic)), master piece, best quality, 1 girl, solo, black hair, ((singe ponytail:1.3)), Chinese ancient, (((white background:1.5))), (charturnerv2:1.3), (multiple views:1.3), ((of the same character in the same outfit)), middle parting hairstyle, <lora:charturnerbetaLora_charturnbetalora:0.2>
 Negative prompt: nsfw, ((worst quality, low quality, extra digits:1.4))
 Steps: 30, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 271156872, Size: 480x200, Model hash: 812cd9f9d9, Model: anythingV3_fp16, Denoising strength: 0.8, ControlNet Enabled: True, ControlNet Module: none, ControlNet Model: control_openpose-fp16 [9ca67cc5], ControlNet Weight: 1, ControlNet Guidance Start: 0, ControlNet Guidance End: 1, Hires upscale: 2, Hires upscaler: Latent
 ```
-Used embeddings: charturnerv2 [9612]
+Used embeddings: charturnerv2 [9612]  
 
 CFG Scale：7  
 Denoising strength：0.8  
 Seed：271156872  
-Result：
+Result：  
 ![](Resources/00008-271156872.png)
 
 
-骨骼图片：
-![](Resources/three_view_head_original.png)
-ControlNet设置：
-![](Resources/three_view_ControlNet_3.png)
+骨骼图片：  
+![](Resources/three_view_head_original.png)  
+ControlNet设置：  
+![](Resources/three_view_ControlNet_3.png)  
 Prompt：
 ```
 ((photo realistic)), master piece, best quality, 1 girl, solo, black hair, ((singe ponytail:1.3)), Chinese ancient, (((white background:1.5))), (charturnerv2:1.3), (multiple views:1.3), ((of the same character in the same outfit)), middle parting hairstyle, <lora:charturnerbetaLora_charturnbetalora:0.3>
 Negative prompt: nsfw, ((worst quality, low quality, extra digits:1.4))
 Steps: 30, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1596857508, Size: 709x208, Model hash: 812cd9f9d9, Model: anythingV3_fp16, Denoising strength: 0.6, ControlNet Enabled: True, ControlNet Module: none, ControlNet Model: control_openpose-fp16 [9ca67cc5], ControlNet Weight: 1, ControlNet Guidance Start: 0, ControlNet Guidance End: 1, Hires upscale: 2, Hires upscaler: Latent
 ```
-Used embeddings: charturnerv2 [9612]
+Used embeddings: charturnerv2 [9612]   
 
 CFG Scale：7  
 Denoising strength：0.6  
 Seed：1596857508  
-Result：
+Result：  
 ![](Resources/00009-1596857508.png)
 
 ## 需要注意和调试的参数
@@ -137,8 +137,8 @@ Result：
 - Textual Inversion: NULL  
 
 ## 设置及对应结果
-输入图片：
-![](Resources/multi_view_input.jpg)
+输入图片：  
+![](Resources/multi_view_input.jpg)  
 无需ControlNet约束  
 Prompt：
 ```
@@ -150,7 +150,7 @@ Steps: 30, Sampler: DPM++ SDE Karras, CFG scale: 15, Seed: 3681444200, Size: 720
 CFG Scale：15  
 Denoising strength：0.6  
 Seed：3681444200  
-Result：
+Result：  
 ![](Resources/00007-3681444200.png)
 
 ## 需要注意和调试的参数

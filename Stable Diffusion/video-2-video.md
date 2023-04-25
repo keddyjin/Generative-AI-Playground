@@ -80,7 +80,7 @@ Steps: 20, Sampler: DPM++ SDE Karras, CFG scale: 10, Seed: 1680175611, Size: 700
 ```
 
 ## 需要注意和调试的参数
-![](Resources/img2img_tuning.png)
+![](Resources/img2img_tuning.png)  
 最主要的参数是：  
 - CFG Scale：影响提示词对整体图像效果的影响程度，值越小越creative，值越大越固定到prompt
 - Denoising strength：影响算法影响程度，0表示图片无变化，1表示图片无关，0~1之间，算法执行的实际步数会小于Sampling steps设定的值  
@@ -118,6 +118,8 @@ result 1 | result 2 | result 3
 
 
 # 试验过程 - img2img+ebsynth
+## Pipeline：  
+```
 stage_index : 7
 project_dir : /home/nvidia/workspace/keddyj/EbSynth-Test2
 original_movie_path : /tmp/in_3skt9qcyx4.mp4
@@ -150,14 +152,22 @@ mask_blur_size : 5
 mask_threshold : 0
 fg_transparency : 0
 mask_mode : Normal
+```
 
+## Prompt：  
+```
 1girl, Princess Zelda, red hair, blue eyes, beautiful eyes, ornate clothing, crown, detail
 Negative prompt: EasyNegative, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, extra fingers, fewer fingers, strange fingers, broken fingers, bad hand, ((zettai ryouiki:1.2)), (bared leg:1.2), ng_deepnegative_v1_75t, nsfw, nude, naked, nipples, (large bust:1.5), (bared bust:1.5) underwear, loli, kid, child, teen, (Forehead decoration:1.2)
 Steps: 20, Sampler: Euler a, CFG scale: 20, Seed: 2497240378, Size: 512x960, Model hash: 812cd9f9d9, Model: anythingV3_fp16, Denoising strength: 0.28, Mask blur: 4, ControlNet-0 Enabled: True, ControlNet-0 Module: canny, ControlNet-0 Model: control_canny-fp16 [e3fe7712], ControlNet-0 Weight: 0.5, ControlNet-0 Guidance Start: 0, ControlNet-0 Guidance End: 1, ControlNet-1 Enabled: True, ControlNet-1 Module: normal_map, ControlNet-1 Model: control_normal-fp16 [63f96f7c], ControlNet-1 Weight: 0.5, ControlNet-1 Guidance Start: 0, ControlNet-1 Guidance End: 1
+```
+
+## Result
 
 
 # Others
 [sd-webui-mov2mov](https://github.com/Scholar01/sd-webui-mov2mov)  
 [Multi-frame rendering](https://xanthius.itch.io/multi-frame-rendering-for-stablediffusion)  
 [ebsynth Windows software](https://ebsynth.com/)  
-[https://github.com/jamriska/ebsynth](https://github.com/jamriska/ebsynth)
+[https://github.com/jamriska/ebsynth](https://github.com/jamriska/ebsynth)  
+[Flicker-Free Animations: Stable Diffusion, EBSynth & ControlNet](https://www.youtube.com/watch?v=Qph7A3UaVds)  
+[Prompt](https://civitai.com/images/79763?period=AllTime&sort=Most+Reactions&view=categories&modelVersionId=75&modelId=66&postId=91675)  
