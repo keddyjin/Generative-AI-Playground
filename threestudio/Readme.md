@@ -174,6 +174,9 @@ Epoch 0: : 10000it [25:24,  6.56it/s]
 Testing DataLoader 0: 100%|██████████████████████████████████████████████████████████| 120/120 [00:25<00:00,  4.68it/s]
 [INFO] Test results saved to outputs/magic3d-coarse-if/a_blue_poison-dart_frog_sitting_on_a_water_lily@20230524-232812/save
 ```
+Coarse result |
+:-: |
+<video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/6936aafd-1031-4a8c-9977-27c6b9ff1872' width=180/> |
 
 ### Refine stage
 Then convert the NeRF from the coarse stage to DMTet and train with differentiable rasterization:
@@ -217,5 +220,6 @@ Epoch 0: : 5000it [12:14,  6.81it/s]
 Testing DataLoader 0: 100%|██████████████████████████████████████████████████████████| 120/120 [00:03<00:00, 31.81it/s]
 [INFO] Test results saved to outputs/magic3d-refine-sd/a_blue_poison-dart_frog_sitting_on_a_water_lily@20230525-101624/save
 ```
-
-
+Refine result |
+:-: |
+<video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/a2f5e084-8224-4bfc-988e-2797e81ac81f' width=180/> |
