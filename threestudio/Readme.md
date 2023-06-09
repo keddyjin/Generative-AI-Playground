@@ -245,10 +245,11 @@ Epoch 0: : 5000it [16:33,  5.03it/s][INFO] `Trainer.fit` stopped: `max_steps=500
 Results
 Coarse result |
 :-: |
-<video src='' width=180/> |
+<video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/6e5e79b1-c75b-41b9-ba2e-e21d7b98b1ba' width=180/> |  
+
 Refine result |
 :-: |
-<video src='' width=180/> |
+<video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/c9638edb-ece4-4159-8a4a-3e966a99c4cf' width=180/> |
 
 Coarse stage
 ```
@@ -267,7 +268,8 @@ Epoch 0: : 5000it [16:30,  5.05it/s][INFO] `Trainer.fit` stopped: `max_steps=500
 Results
 Coarse result |
 :-: |
-<video src='' width=180/> |
+<video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/97332f5b-91b1-487e-9100-3d4c822b2aa5' width=180/> |  
+
 Refine result |
 :-: |
-<video src='' width=180/> |
+<video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/54100a2b-1f6b-487f-8879-6684fc3c8f1e' width=180/> |
