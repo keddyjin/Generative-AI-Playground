@@ -11,6 +11,7 @@
   - [Running Magic3D](#running-magic3d)
     - [Coarse stage](#coarse-stage)
     - [Refine stage](#refine-stage)
+  - [More Magic3D Experiments](#more-magic3d-experiments)
 
 
 # 1 Install threestudio
@@ -223,3 +224,50 @@ Testing DataLoader 0: 100%|█████████████████�
 Refine result |
 :-: |
 <video src='https://github.com/keddyjin/Generative-AI-Playground/assets/5978120/a2f5e084-8224-4bfc-988e-2797e81ac81f' width=180/> |
+
+
+
+## More Magic3D Experiments
+Coarse stage
+```
+python launch.py --config configs/magic3d-coarse-if.yaml --train --gpu 0 system.prompt_processor.prompt="a beautiful dress made out of garbage bags, on a mannequin. Studio lighting, high quality, high resolution"
+```
+```
+Epoch 0: : 10000it [28:26,  5.86it/s][INFO] `Trainer.fit` stopped: `max_steps=10000` reached.
+```
+Refine stage
+```
+python launch.py --config configs/magic3d-refine-sd.yaml --train --gpu 0 system.prompt_processor.prompt="a beautiful dress made out of garbage bags, on a mannequin. Studio lighting, high quality, high resolution" system.from_coarse=outputs/magic3d-coarse-if/
+```
+```
+Epoch 0: : 5000it [16:33,  5.03it/s][INFO] `Trainer.fit` stopped: `max_steps=5000` reached.
+```
+Results
+Coarse result |
+:-: |
+<video src='' width=180/> |
+Refine result |
+:-: |
+<video src='' width=180/> |
+
+Coarse stage
+```
+python launch.py --config configs/magic3d-coarse-if.yaml --train --gpu 0 system.prompt_processor.prompt="Michelangelo style statue of an astronaut"
+```
+```
+Epoch 0: : 10000it [35:15,  4.73it/s][INFO] `Trainer.fit` stopped: `max_steps=10000` reached.
+```
+Refine stage
+```
+python launch.py --config configs/magic3d-refine-sd.yaml --train --gpu 0 system.prompt_processor.prompt="Michelangelo style statue of an astronaut" system.from_coarse=outputs/magic3d-coarse-if/Michelangelo_style_statue_of_an_astronaut@20230609-122051/ckpts/last.ckpt
+```
+```
+Epoch 0: : 5000it [16:30,  5.05it/s][INFO] `Trainer.fit` stopped: `max_steps=5000` reached.
+```
+Results
+Coarse result |
+:-: |
+<video src='' width=180/> |
+Refine result |
+:-: |
+<video src='' width=180/> |
